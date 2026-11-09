@@ -1,0 +1,262 @@
+[
+ {
+  "judge": "Qwen2.5-1.5B-Instruct",
+  "n_cases": 311,
+  "modes": {
+   "lenient": {
+    "argmax_fp_rate": 0.6752411575562701,
+    "threshold": 0.9696663618087769,
+    "fp_at_threshold": 0.09967845659163987,
+    "families": {
+     "negation": {
+      "n": 311,
+      "argmax_detection": 0.8971061093247589,
+      "auroc_vs_clean": 0.5561977233486006,
+      "detection_at_fpr": 0.03858520900321544,
+      "detection_at_fpr_ci95": [
+       0.01929260450160772,
+       0.06430868167202572
+      ],
+      "paired_not_higher_than_clean": 0.4115755627009646
+     },
+     "random_swap": {
+      "n": 311,
+      "argmax_detection": 0.9421221864951769,
+      "auroc_vs_clean": 0.7777576741348828,
+      "detection_at_fpr": 0.4533762057877814,
+      "detection_at_fpr_ci95": [
+       0.40192926045016075,
+       0.5112540192926045
+      ],
+      "paired_not_higher_than_clean": 0.1832797427652733
+     },
+     "real": {
+      "n": 311,
+      "argmax_detection": 0.6977491961414791,
+      "auroc_vs_clean": 0.5284064474105934,
+      "detection_at_fpr": 0.10610932475884244,
+      "detection_at_fpr_ci95": [
+       0.07395498392282958,
+       0.1414790996784566
+      ],
+      "paired_not_higher_than_clean": 0.3890675241157556
+     }
+    },
+    "real_detection_by_type": {
+     "causalOrganism": [
+      0.09090909090909091,
+      11
+     ],
+     "diagnosis": [
+      0.13793103448275862,
+      116
+     ],
+     "management": [
+      0.09278350515463918,
+      97
+     ],
+     "pharmacotherapy": [
+      0.08333333333333333,
+      36
+     ],
+     "treatment": [
+      0.0784313725490196,
+      51
+     ]
+    }
+   },
+   "strict": {
+    "argmax_fp_rate": 0.6752411575562701,
+    "threshold": 0.9711826238781214,
+    "fp_at_threshold": 0.09967845659163987,
+    "families": {
+     "negation": {
+      "n": 311,
+      "argmax_detection": 0.8971061093247589,
+      "auroc_vs_clean": 0.567549963296492,
+      "detection_at_fpr": 0.05466237942122187,
+      "detection_at_fpr_ci95": [
+       0.03215434083601286,
+       0.08038585209003216
+      ],
+      "paired_not_higher_than_clean": 0.39228295819935693
+     },
+     "random_swap": {
+      "n": 311,
+      "argmax_detection": 0.9421221864951769,
+      "auroc_vs_clean": 0.7783986931483339,
+      "detection_at_fpr": 0.4533762057877814,
+      "detection_at_fpr_ci95": [
+       0.40192926045016075,
+       0.5080385852090032
+      ],
+      "paired_not_higher_than_clean": 0.18006430868167203
+     },
+     "real": {
+      "n": 311,
+      "argmax_detection": 0.6977491961414791,
+      "auroc_vs_clean": 0.5284167864269393,
+      "detection_at_fpr": 0.10289389067524116,
+      "detection_at_fpr_ci95": [
+       0.0707395498392283,
+       0.1382636655948553
+      ],
+      "paired_not_higher_than_clean": 0.3890675241157556
+     }
+    },
+    "real_detection_by_type": {
+     "causalOrganism": [
+      0.09090909090909091,
+      11
+     ],
+     "diagnosis": [
+      0.13793103448275862,
+      116
+     ],
+     "management": [
+      0.08247422680412371,
+      97
+     ],
+     "pharmacotherapy": [
+      0.08333333333333333,
+      36
+     ],
+     "treatment": [
+      0.0784313725490196,
+      51
+     ]
+    }
+   }
+  }
+ },
+ {
+  "judge": "deberta-v3-base-nli",
+  "n_cases": 311,
+  "modes": {
+   "lenient": {
+    "argmax_fp_rate": 0.0707395498392283,
+    "threshold": 0.15478515625,
+    "fp_at_threshold": 0.09967845659163987,
+    "families": {
+     "negation": {
+      "n": 311,
+      "argmax_detection": 0.05144694533762058,
+      "auroc_vs_clean": 0.6270458328594618,
+      "detection_at_fpr": 0.08681672025723473,
+      "detection_at_fpr_ci95": [
+       0.05787781350482315,
+       0.1189710610932476
+      ],
+      "paired_not_higher_than_clean": 0.31189710610932475
+     },
+     "random_swap": {
+      "n": 311,
+      "argmax_detection": 0.1157556270096463,
+      "auroc_vs_clean": 0.5346408742672222,
+      "detection_at_fpr": 0.15755627009646303,
+      "detection_at_fpr_ci95": [
+       0.1189710610932476,
+       0.19935691318327975
+      ],
+      "paired_not_higher_than_clean": 0.43086816720257237
+     },
+     "real": {
+      "n": 311,
+      "argmax_detection": 0.05466237942122187,
+      "auroc_vs_clean": 0.4930108249501142,
+      "detection_at_fpr": 0.08681672025723473,
+      "detection_at_fpr_ci95": [
+       0.05787781350482315,
+       0.1189710610932476
+      ],
+      "paired_not_higher_than_clean": 0.5112540192926045
+     }
+    },
+    "real_detection_by_type": {
+     "causalOrganism": [
+      0.18181818181818182,
+      11
+     ],
+     "diagnosis": [
+      0.1206896551724138,
+      116
+     ],
+     "management": [
+      0.08247422680412371,
+      97
+     ],
+     "pharmacotherapy": [
+      0.08333333333333333,
+      36
+     ],
+     "treatment": [
+      0.0,
+      51
+     ]
+    }
+   },
+   "strict": {
+    "argmax_fp_rate": 0.9839228295819936,
+    "threshold": 0.9996557235717773,
+    "fp_at_threshold": 0.09967845659163987,
+    "families": {
+     "negation": {
+      "n": 311,
+      "argmax_detection": 0.7395498392282959,
+      "auroc_vs_clean": 0.14814259571344382,
+      "detection_at_fpr": 0.006430868167202572,
+      "detection_at_fpr_ci95": [
+       0.0,
+       0.01607717041800643
+      ],
+      "paired_not_higher_than_clean": 0.9421221864951769
+     },
+     "random_swap": {
+      "n": 311,
+      "argmax_detection": 0.9903536977491961,
+      "auroc_vs_clean": 0.5904819015518864,
+      "detection_at_fpr": 0.18006430868167203,
+      "detection_at_fpr_ci95": [
+       0.1382636655948553,
+       0.22508038585209003
+      ],
+      "paired_not_higher_than_clean": 0.4212218649517685
+     },
+     "real": {
+      "n": 311,
+      "argmax_detection": 0.9710610932475884,
+      "auroc_vs_clean": 0.5209623556414843,
+      "detection_at_fpr": 0.15112540192926044,
+      "detection_at_fpr_ci95": [
+       0.10932475884244373,
+       0.18971061093247588
+      ],
+      "paired_not_higher_than_clean": 0.4662379421221865
+     }
+    },
+    "real_detection_by_type": {
+     "causalOrganism": [
+      0.0,
+      11
+     ],
+     "diagnosis": [
+      0.06896551724137931,
+      116
+     ],
+     "management": [
+      0.17525773195876287,
+      97
+     ],
+     "pharmacotherapy": [
+      0.25,
+      36
+     ],
+     "treatment": [
+      0.2549019607843137,
+      51
+     ]
+    }
+   }
+  }
+ }
+]
